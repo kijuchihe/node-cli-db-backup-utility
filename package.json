@@ -1,0 +1,59 @@
+{
+  "name": "express-database-backup-utility",
+  "version": "1.0.0",
+  "description": "A comprehensive database backup and restore utility supporting multiple databases and storage options",
+  "main": "dist/cli.js",
+  "bin": {
+    "db-backup": "./dist/cli.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/cli.js",
+    "dev": "ts-node src/cli.ts",
+    "backup": "ts-node src/cli.ts backup",
+    "restore": "ts-node src/cli.ts restore",
+    "lint": "eslint . --ext .ts",
+    "test": "jest"
+  },
+  "repository": "https://github.com/kijuchihe/express-database-backup-utility",
+  "keywords": [
+    "database",
+    "backup",
+    "restore",
+    "mongodb",
+    "mysql",
+    "postgresql",
+    "sqlite",
+    "aws",
+    "s3"
+  ],
+  "author": "Kingsley",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "@azure/storage-blob": "^12.26.0",
+    "@google-cloud/storage": "^7.14.0",
+    "@slack/webhook": "^7.0.4",
+    "@types/express": "^5.0.0",
+    "@types/mongoose": "^5.11.97",
+    "@types/mysql": "^2.15.26",
+    "@types/node": "^22.10.1",
+    "@types/pg": "^8.11.10",
+    "@types/sqlite3": "^3.1.11",
+    "aws-sdk": "^2.1692.0",
+    "commander": "^12.1.0",
+    "compression": "^1.7.5",
+    "cron": "^3.2.1",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1",
+    "mongodb": "^6.11.0",
+    "mongoose": "^8.8.3",
+    "mysql2": "^3.11.5",
+    "pg": "^8.13.1",
+    "sqlite3": "^5.1.7",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.2",
+    "winston": "^3.17.0",
+    "zod": "^3.23.8"
+  }
+}
